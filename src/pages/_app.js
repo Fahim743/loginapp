@@ -1,9 +1,10 @@
-import Header from '@/components/Header'
+import MainLayout from '../components/layouts/MainLayout'
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
   return <>
-  <Header></Header>
+  <MainLayout>
   <Component {...pageProps} />
+  </MainLayout>
   </>
 }
